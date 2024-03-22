@@ -1,0 +1,35 @@
+# Terraform
+.terraform
+terraform.tfvars
+*.tfstate
+*.tfstate.backup
+.terragrunt
+.terragrunt*
+
+# OS X
+.history
+.DS_Store
+
+# IntelliJ
+.idea_modules
+*.iml
+*.iws
+*.ipr
+.idea/
+build/
+out/
+tmp
+
+# Gradle
+.gradle/
+
+# Ignore Terraform lock files, as we want to test the Terraform code in these repos with the latest provider
+# versions.
+.terraform.lock.hcl
+/app/*/
+!/app/dev/
+!/app/developer-id/
+!/app/test/
+!/app/int/
+!/apps-prod/prod/
+
