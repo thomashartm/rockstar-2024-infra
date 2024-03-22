@@ -69,13 +69,17 @@ Unfortunately Terraform does not allow us to do that right now without a lot of 
 1. Associate the key value store with your function. And copy the id.
 2. Open the CF function and update following two vars:
 
+```
     const kvsId = '<your-key-value-store-id>';
     const aemAuthorUrl = '<https://your-aem-author-host>';
+```
     
 3. Add the following variables to your key value store
 
+```
     apiKey="API key between CF and ALB which you should set in the settings store"
     hmac="Your hmac key which must match the AEM author hmac config"
+```
 
 4. Update the association.
  
